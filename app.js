@@ -37,13 +37,12 @@
         [arr[0], arr[1]] = [arr[1], arr[0]];
 
     //raceResults()
-        const raceResults = (arr) => {
+        const raceResults = ([first, second, third, ...rest]) => {
             return {
                 first,
                 second,
                 third,
-                ...rest
+                rest
             };
-        
         }
 
